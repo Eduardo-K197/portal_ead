@@ -1,4 +1,14 @@
 <?php
-echo $_post['usuario'].'<br>';
-echo $_post['senha'];
+require_once('conexao.php');
+$usuario = $_post['usuario'] . '<br>';
+$senha = $_post['senha'];
+$senha_crip = md5($senha);
+
+$query = $pdo->("select * from usuarios where usuario = '$usuario' and senha = '$senha'");
+$res = $query->fetchAll(PDO::FETCH_ASSOC);
+if (count($res) > 0) {
+    echo 'Usuário existente';
+}
+
+
 ?>

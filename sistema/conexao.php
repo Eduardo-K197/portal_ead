@@ -11,5 +11,9 @@ try {
     echo 'Erro ao conectar ao banco de dados<br><br>!'.$e;
 }
 
+
+//variaveis do sistema
+$nome_sistema = 'Eduuardo';
+$email_sistema = 'carloseduardobezerradasilva2@gmail.com';
 ?>
 
