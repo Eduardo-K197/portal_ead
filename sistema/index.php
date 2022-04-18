@@ -1,9 +1,9 @@
 <?php
-require_once ('conexao.php');
-$senha ='123';
+require_once('conexao.php');
+$senha = '123';
 $senha_crip = md5($senha);
 //criar um usuario administrador caso não exista
-$pdo->query("insert into usuarios set nome = 'Administrador', cpf = 000.000.000-00, usuario = 'carloseduardobezerradasilva2@gmail.com', senha ='$senha', 'senha_crip' = 'senha_crip', 'nivel' = 'Administrador', 'foto' = 'sem-perfil,jpg', 'id_pessoas' = 1, 'ativo' = 'Sim', 'data' = 'curDate()');
+$pdo->query("INSERT INTO usuarios SET nome = 'Administrador', cpf = '000.000.000-00', usuario = 'carloseduardobezerradasilva2@gmail.com', senha ='$senha', senha_crip = 'senha_crip', nivel = 'Administrador', foto = 'sem-perfil,jpg', id_pessoa = 1, ativo = 'Sim', data = curDate() ");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
