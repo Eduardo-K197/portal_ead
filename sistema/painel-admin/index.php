@@ -1,3 +1,4 @@
 <?php
-echo 'Painel admin';
+@session_start();
+echo $_SESSION['nome'];
 ?>
