@@ -2,7 +2,7 @@
 
 $servidor = "localhost";
 $usuario = "admin";
-$senha = "353331499Eduardo";
+$senha = "";
 $banco = "portal";
 
 try {
